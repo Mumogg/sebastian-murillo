@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1a1715" media="(prefers-color-scheme: dark)" />
+
+  <title>Sebastián Murillo — Front End Developer</title>
+  <meta name="description" content="Sebastián Murillo Mora — Front End Developer based in Costa Rica. Building functional, accessible web interfaces with JavaScript, React and a designer's attention to detail." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sebastián Murillo — Front End Developer" />
+  <meta property="og:description" content="Front End Developer in Costa Rica. JavaScript, React, attention to typography, motion and a11y." />
+  <!-- TODO: replace with real og-image (1200x630, place at /og.jpg) once a hero shot is ready -->
+  <meta property="og:image" content="og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- TODO: replace with real favicon. inline SVG used for now so the site never 404s. -->
+  <link rel="icon" type="image/svg+xml"
+    href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="%23f4efe6"/><text x="50%" y="58%" text-anchor="middle" font-family="Georgia,serif" font-size="44" font-style="italic" fill="%23c2410c">s</text></svg>' />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Mark JS as available so reveal animations only hide content when JS will un-hide it. -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="masthead" role="banner">
+    <a class="masthead__brand" href="#" aria-label="Home">
+      <span class="masthead__mark" aria-hidden="true">SM</span>
+      <span class="masthead__edition">Portfolio &middot; Edition 2026</span>
+    </a>
+    <nav class="masthead__nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============== HERO ============== -->
+    <section class="hero" aria-labelledby="hero-name">
+      <p class="hero__kicker" data-reveal>Costa Rica &middot; Available for remote</p>
+
+      <h1 id="hero-name" class="hero__name" data-reveal>
+        <span class="hero__line">Sebastián</span>
+        <span class="hero__line hero__line--italic"><em>Murillo</em></span>
+      </h1>
+
+      <div class="hero__meta" data-reveal>
+        <p class="hero__role">Front&nbsp;End&nbsp;Developer<span class="hero__sep">/</span>builds&nbsp;the&nbsp;layer&nbsp;people&nbsp;actually&nbsp;touch.</p>
+      </div>
+
+      <p class="hero__statement" data-reveal>
+        Systems-engineer turned interface craftsperson. I write small,
+        understandable JavaScript, treat CSS like a design tool, and ship
+        accessible interfaces that don&rsquo;t need a redesign in six months.
+      </p>
+
+      <p class="hero__now mono" data-reveal>
+        <span class="hero__now-dot" aria-hidden="true"></span>
+        <span class="hero__now-label">NOW</span>
+        <span id="now-line">today &middot; reactivating React, learning Adobe Experience Manager.</span>
+      </p>
+    </section>
+
+    <!-- ============== ABOUT ============== -->
+    <section id="about" class="about section" aria-labelledby="about-h">
+      <div class="section__head">
+        <span class="section__num mono">01</span>
+        <h2 id="about-h" class="section__title">About</h2>
+      </div>
+
+      <div class="about__grid">
+        <p class="about__lead" data-reveal>
+          I&rsquo;m a <em>Computer&nbsp;Systems&nbsp;Engineer</em> from Universidad Fidélitas with a working
+          foundation in JavaScript, HTML5, CSS3 and React.
+          I&rsquo;ve built and shipped full-stack web apps end-to-end &mdash;
+          OAuth flows, Cloud Functions, third-party APIs, the whole stack.
+        </p>
+        <p class="about__body" data-reveal>
+          My most recent role was technical support for Klaviyo &mdash; a SaaS marketing
+          platform &mdash; where I lived inside HTML/CSS email templates,
+          browser DevTools and platform configuration. That meant reading other
+          people&rsquo;s markup under pressure, debugging across browsers, and
+          explaining the fix in writing. Not glamorous, but a useful school for
+          a front-end developer who cares about quality.
+        </p>
+        <p class="about__body" data-reveal>
+          Right now I&rsquo;m reactivating React intensively and ramping up on
+          Adobe Experience Manager (HTL, Sling Models, Clientlibs) so I can
+          contribute to enterprise component work, not just spec.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== SELECTED WORK ============== -->
+    <section id="work" class="work section" aria-labelledby="work-h">
+      <div class="section__head">
+        <span class="section__num mono">02</span>
+        <h2 id="work-h" class="section__title">Selected&nbsp;Work</h2>
+      </div>
+
+      <!-- Featured: PlaylistLab -->
+      <article class="feature" data-reveal>
+        <div class="feature__media" aria-hidden="true">
+          <!-- TODO: replace with a real screenshot of PlaylistLab.
+               Recommended: 1600x1000 webp, place at /assets/playlistlab.webp,
+               then add a <picture> with webp + jpg fallback. -->
+          <div class="feature__placeholder">
+            <span class="mono">screenshot pending</span>
+          </div>
+        </div>
+
+        <div class="feature__body">
+          <p class="feature__tag mono">Featured project &middot; 2025–2026</p>
+          <h3 class="feature__title">
+            PlaylistLab<span class="feature__title-accent">.</span>
+          </h3>
+          <p class="feature__lede">
+            A full-stack web app that connects to a user&rsquo;s Spotify account
+            and generates intelligent playlists from their library &mdash; built
+            solo, end&#8209;to&#8209;end, and currently live in production.
+          </p>
+
+          <dl class="feature__spec">
+            <div><dt class="mono">Stack</dt><dd>React, Firebase Auth, Firestore, Cloud Functions, Spotify Web API, OAuth 2.0</dd></div>
+            <div><dt class="mono">Role</dt><dd>Sole engineer &middot; product, design, frontend, backend, deploy</dd></div>
+            <div><dt class="mono">Status</dt><dd>Live &middot; production users</dd></div>
+          </dl>
+
+          <div class="feature__links">
+            <a class="btn btn--primary" href="https://playlistlab-70dc4.web.app/" target="_blank" rel="noopener">
+              Visit live site <span aria-hidden="true">&rarr;</span>
+            </a>
+            <!-- Repo intentionally omitted: project is private & commercial. -->
+            <span class="feature__note mono">Source private &mdash; commercial product.</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Index: secondary projects as a typographic table -->
+      <ol class="index" aria-label="Other projects">
+
+        <li class="index__row" data-reveal>
+          <a class="index__link" href="https://github.com/Mumogg/React-Twitter" target="_blank" rel="noopener">
+            <span class="index__num mono">i.</span>
+            <span class="index__title">React-Twitter</span>
+            <span class="index__meta mono">React &middot; Vite &middot; JS</span>
+            <!-- TODO(Sebas): replace this description with the real one once
+                 you re-open the repo and confirm what the project actually does.
+                 Keep it to ONE sentence. Example pattern:
+                 "A [feature] built with [stack] to practice [pattern]." -->
+            <span class="index__note">UI patterns practice with React + Vite. <em>(verify scope &mdash; placeholder copy)</em></span>
+            <span class="index__cta mono" aria-hidden="true">view repo &rarr;</span>
+          </a>
+        </li>
+
+        <li class="index__row" data-reveal>
+          <a class="index__link" href="https://github.com/Mumogg/Linux" target="_blank" rel="noopener">
+            <span class="index__num mono">ii.</span>
+            <span class="index__title">Linux Hardening Labs</span>
+            <span class="index__meta mono">Bash &middot; Ubuntu &middot; Kali</span>
+            <span class="index__note">Four documented labs on system tuning &amp; security configuration. Not front-end &mdash; included as evidence of technical discipline and writing.</span>
+            <span class="index__cta mono" aria-hidden="true">view repo &rarr;</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============== SKILLS ============== -->
+    <section id="skills" class="skills section" aria-labelledby="skills-h">
+      <div class="section__head">
+        <span class="section__num mono">03</span>
+        <h2 id="skills-h" class="section__title">Skills</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skills__group" data-reveal>
+          <h3 class="skills__heading mono">Comfortable</h3>
+          <p class="skills__body">
+            HTML5, CSS3, JavaScript&nbsp;(ES6+),
+            React, Vite, Tailwind&nbsp;CSS,
+            Firebase&nbsp;(Auth, Firestore, Cloud&nbsp;Functions),
+            REST&nbsp;APIs, JSON, OAuth&nbsp;2.0,
+            Git &amp; GitHub,
+            cross-browser debugging, Browser DevTools,
+            responsive&nbsp;web&nbsp;design (mobile&#8209;first).
+          </p>
+        </div>
+
+        <div class="skills__group" data-reveal>
+          <h3 class="skills__heading mono">Familiar</h3>
+          <p class="skills__body">
+            TypeScript, Python, Bash.
+          </p>
+        </div>
+
+        <div class="skills__group" data-reveal>
+          <h3 class="skills__heading mono">Currently learning</h3>
+          <p class="skills__body">
+            Adobe Experience Manager &mdash;
+            HTL, Sling&nbsp;Models, JCR, Clientlibs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="contact section" aria-labelledby="contact-h">
+      <div class="section__head">
+        <span class="section__num mono">04</span>
+        <h2 id="contact-h" class="section__title">Contact</h2>
+      </div>
+
+      <p class="contact__statement" data-reveal>
+        Looking for a Front End role at a team that <em>cares about the work</em>.
+        If that&rsquo;s you, write me &mdash;
+      </p>
+
+      <ul class="contact__list" data-reveal>
+        <li>
+          <span class="contact__label mono">Email</span>
+          <a class="contact__link" href="mailto:sebastianmurillomoracr@gmail.com">sebastianmurillomoracr@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact__label mono">Phone</span>
+          <a class="contact__link" href="tel:+50687641045">+506&nbsp;8764&#8209;1045</a>
+        </li>
+        <li>
+          <span class="contact__label mono">LinkedIn</span>
+          <a class="contact__link" href="https://linkedin.com/in/sebastian-murillo-cr" target="_blank" rel="noopener">linkedin.com/in/sebastian-murillo-cr</a>
+        </li>
+        <li>
+          <span class="contact__label mono">GitHub</span>
+          <a class="contact__link" href="https://github.com/Mumogg" target="_blank" rel="noopener">github.com/Mumogg</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="colophon" role="contentinfo">
+    <div class="colophon__row">
+      <span class="mono">© <span id="year">2026</span> &middot; Sebastián Murillo Mora</span>
+      <span class="mono colophon__set">Set in Fraunces, Bricolage Grotesque &amp; JetBrains Mono.</span>
+      <a class="mono colophon__src" href="https://github.com/Mumogg/sebastian-murillo" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
