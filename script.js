@@ -68,7 +68,28 @@
     });
   }
 
-  /* -- 4. Console easter egg ---------------------------------------------- */
+  /* -- 4. Carousel(s) ----------------------------------------------------- */
+  document.querySelectorAll("[data-carousel]").forEach(function (root) {
+    var slides = root.querySelectorAll("[data-carousel-track] > li");
+    var prevBtn = root.querySelector("[data-carousel-prev]");
+    var nextBtn = root.querySelector("[data-carousel-next]");
+    var current = root.querySelector("[data-carousel-current]");
+    var total = slides.length;
+    var idx = 0;
+    function show(n) {
+      idx = (n + total) % total;
+      slides.forEach(function (s, i) { s.classList.toggle("is-active", i === idx); });
+      if (current) current.textContent = String(idx + 1);
+    }
+    if (prevBtn) prevBtn.addEventListener("click", function () { show(idx - 1); });
+    if (nextBtn) nextBtn.addEventListener("click", function () { show(idx + 1); });
+    root.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft")  { e.preventDefault(); show(idx - 1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); show(idx + 1); }
+    });
+  });
+
+  /* -- 5. Console easter egg ---------------------------------------------- */
   if (window.console && console.log) {
     var head = "color:#c2410c;font:600 14px/1.2 ui-monospace,monospace;";
     var body = "color:#5c554f;font:400 12px/1.4 ui-monospace,monospace;";

@@ -112,12 +112,22 @@
 
       <!-- Featured: PlaylistLab -->
       <article class="feature" data-reveal>
-        <div class="feature__media" aria-hidden="true">
-          <!-- TODO: replace with a real screenshot of PlaylistLab.
-               Recommended: 1600x1000 webp, place at /assets/playlistlab.webp,
-               then add a <picture> with webp + jpg fallback. -->
-          <div class="feature__placeholder">
-            <span class="mono">screenshot pending</span>
+        <div class="feature__media">
+          <div class="carousel" data-carousel tabindex="0" aria-roledescription="carousel" aria-label="PlaylistLab screenshots">
+            <ol class="carousel__track" data-carousel-track>
+              <li class="carousel__slide is-active"><img src="assets/Screenshot_2026-05-07_19-54-25.png" alt="PlaylistLab landing page &mdash; hero section with the value proposition and a sample playlist preview." loading="eager" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-55-44.png" alt="PlaylistLab generate dashboard &mdash; musical profile analysis with mood tags, audio fingerprint and AI prompt input." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-56-36.png" alt="PlaylistLab &mdash; screenshot 3 of 9." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-56-56.png" alt="PlaylistLab &mdash; screenshot 4 of 9." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-57-19.png" alt="PlaylistLab &mdash; screenshot 5 of 9." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-57-29.png" alt="PlaylistLab &mdash; screenshot 6 of 9." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-57-47.png" alt="PlaylistLab &mdash; screenshot 7 of 9." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-57-54.png" alt="PlaylistLab &mdash; screenshot 8 of 9." loading="lazy" width="1022" height="763" /></li>
+              <li class="carousel__slide"><img src="assets/Screenshot_2026-05-07_19-57-59.png" alt="PlaylistLab &mdash; screenshot 9 of 9." loading="lazy" width="1022" height="763" /></li>
+            </ol>
+            <button class="carousel__btn carousel__btn--prev" type="button" data-carousel-prev aria-label="Previous screenshot"><span aria-hidden="true">&larr;</span></button>
+            <button class="carousel__btn carousel__btn--next" type="button" data-carousel-next aria-label="Next screenshot"><span aria-hidden="true">&rarr;</span></button>
+            <p class="carousel__count mono" aria-live="polite"><span data-carousel-current>1</span>&nbsp;/&nbsp;<span data-carousel-total>9</span></p>
           </div>
         </div>
 
