@@ -377,11 +377,6 @@ main { padding-block-start: clamp(2rem, 6vw, 5rem); }
   isolation: isolate;
   transition: transform .6s var(--ease-out);
 }
-.feature__media::before {
-  content: "";
-  display: block;
-  padding-top: 75%;
-}
 .feature:hover .feature__media { transform: translateY(-4px); }
 
 .feature__placeholder {
@@ -757,11 +752,23 @@ main { padding-block-start: clamp(2rem, 6vw, 5rem); }
 /* =========================================================================
    CAROUSEL — featured project media
    ========================================================================= */
-.carousel { position: absolute; inset: 0; touch-action: pan-y pinch-zoom; }
-.carousel__track { list-style: none; margin: 0; padding: 0; position: absolute; inset: 0; }
-.carousel__slide { position: absolute; inset: 0; opacity: 0; transition: opacity 360ms ease; pointer-events: none; }
+.carousel { position: relative; width: 100%; touch-action: pan-y pinch-zoom; }
+.carousel__track {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.carousel__slide {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition: opacity 360ms ease;
+  pointer-events: none;
+}
 .carousel__slide.is-active { opacity: 1; pointer-events: auto; }
-.carousel__slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.carousel__slide img { width: 100%; height: auto; display: block; }
 .carousel__btn {
   position: absolute; top: 50%; transform: translateY(-50%);
   width: 2.75rem; height: 2.75rem;
