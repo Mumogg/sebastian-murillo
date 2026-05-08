@@ -87,6 +87,20 @@
       if (e.key === "ArrowLeft")  { e.preventDefault(); show(idx - 1); }
       if (e.key === "ArrowRight") { e.preventDefault(); show(idx + 1); }
     });
+
+    /* Swipe support: only single-finger horizontal gestures past 40px */
+    var startX = null;
+    root.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { startX = null; return; }
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+    root.addEventListener("touchend", function (e) {
+      if (startX === null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      startX = null;
+      if (Math.abs(dx) < 40) return;
+      show(idx + (dx < 0 ? 1 : -1));
+    });
   });
 
   /* -- 5. Console easter egg ---------------------------------------------- */
