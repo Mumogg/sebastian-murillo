@@ -377,6 +377,11 @@ main { padding-block-start: clamp(2rem, 6vw, 5rem); }
   isolation: isolate;
   transition: transform .6s var(--ease-out);
 }
+.feature__media::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
 .feature:hover .feature__media { transform: translateY(-4px); }
 
 .feature__placeholder {
@@ -752,7 +757,7 @@ main { padding-block-start: clamp(2rem, 6vw, 5rem); }
 /* =========================================================================
    CAROUSEL — featured project media
    ========================================================================= */
-.carousel { position: relative; width: 100%; height: 100%; touch-action: pan-y pinch-zoom; }
+.carousel { position: absolute; inset: 0; touch-action: pan-y pinch-zoom; }
 .carousel__track { list-style: none; margin: 0; padding: 0; position: absolute; inset: 0; }
 .carousel__slide { position: absolute; inset: 0; opacity: 0; transition: opacity 360ms ease; pointer-events: none; }
 .carousel__slide.is-active { opacity: 1; pointer-events: auto; }
