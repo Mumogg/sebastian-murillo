@@ -107,10 +107,6 @@ GitHub Pages picks up the push automatically. No build, no CI to wait for.
   `assets/playlistlab.webp` (~1600×1000) and swap the
   `.feature__placeholder` block in `index.html` for a `<picture>` with
   webp + jpg fallback and proper `alt` text.
-- [ ] **React-Twitter description.** In `index.html`, find
-  `<!-- TODO(Sebas): replace this description ...`
-  and rewrite the `.index__note` text to one accurate sentence about
-  what the project actually does.
 - [ ] **`og:image`.** Drop a 1200×630 hero image at `og.jpg` (or change
   the path in the `<meta property="og:image">` tag).
 - [ ] **Favicon.** The current favicon is an inline SVG (a stylised "s").
