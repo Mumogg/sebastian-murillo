@@ -376,6 +376,7 @@ main { padding-block-start: clamp(0.5rem, 2vw, 1.5rem); }
   aspect-ratio: 4 / 3;
   isolation: isolate;
   transition: transform .6s var(--ease-out);
+  align-self: start;          /* don't stretch vertically with the body — prevents image-size bug */
   min-width: 0;               /* allow the column to respect its 1.15fr track */
 }
 .feature:hover .feature__media { transform: translateY(-4px); }
@@ -520,6 +521,7 @@ main { padding-block-start: clamp(0.5rem, 2vw, 1.5rem); }
   border-top: 1px solid var(--rule);
 }
 .index__row { border-bottom: 1px solid var(--rule); }
+.index__row:last-child { border-bottom: none; }
 .index__link {
   display: grid;
   grid-template-columns: 2.25rem 1.4fr 1fr 2.5fr auto;
