@@ -136,7 +136,7 @@ a:hover {
 
 .masthead, main, .colophon { width: var(--container); margin-inline: auto; }
 
-main { padding-block-start: clamp(1.25rem, 4vw, 3rem); }
+main { padding-block-start: clamp(0.5rem, 2vw, 1.5rem); }
 
 .section {
   padding-block: clamp(4rem, 10vw, 8rem);
@@ -178,7 +178,7 @@ main { padding-block-start: clamp(1.25rem, 4vw, 3rem); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: clamp(1.25rem, 2.5vw, 2rem);
+  padding-block: clamp(0.75rem, 1.5vw, 1.25rem);
   gap: 1.5rem;
 }
 .masthead__brand {
@@ -224,9 +224,9 @@ main { padding-block-start: clamp(1.25rem, 4vw, 3rem); }
 
 .hero {
   position: relative;
-  padding-block: clamp(1.5rem, 4vw, 3rem) clamp(4rem, 10vw, 8rem);
+  padding-block: clamp(0.75rem, 2vw, 1.5rem) clamp(4rem, 10vw, 8rem);
   display: grid;
-  gap: clamp(1.25rem, 2.5vw, 2rem);
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 .hero__kicker {
@@ -443,7 +443,7 @@ main { padding-block-start: clamp(1.25rem, 4vw, 3rem); }
 }
 .feature__spec > div {
   display: grid;
-  grid-template-columns: 5.5rem 1fr;
+  grid-template-columns: 7.5rem 1fr;
   gap: 1rem;
   align-items: baseline;
 }
