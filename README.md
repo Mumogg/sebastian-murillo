@@ -8,6 +8,16 @@ Hand-written static site — no framework, no build step, no dependencies. Three
 
 ---
 
+## What's on the site
+
+- **Hero + About** — Computer Systems Engineer building for the browser; current focus is React + TypeScript + Adobe Experience Manager.
+- **Selected work** — `PlaylistLab`, a full-stack Spotify/YouTube playlist generator with AI-prompt support. Deployed, publicly accessible, actively developing.
+- **Skills** — Front-End / Back-End & Data / Systems & Security.
+- **Systems & Security** — Linux Hardening Labs (GitHub) and the networking foundation behind it (Cisco Networking Academy, CCNA modules 1–2, IoT Fundamentals).
+- **Contact** — email, phone, LinkedIn, GitHub.
+
+---
+
 ## Design notes
 
 - **Typography:** Fraunces (display), Bricolage Grotesque (body), JetBrains Mono (metadata). All loaded from Google Fonts with `display=swap`. Variable fonts — weights and optical sizes tuned via `font-variation-settings`.

@@ -15,7 +15,7 @@
       var fmt = new Intl.DateTimeFormat("en-US", {
         month: "long", day: "numeric", year: "numeric"
       }).format(today).toLowerCase();
-      nowEl.textContent = fmt + " · reactivating React, learning Adobe Experience Manager.";
+      nowEl.textContent = fmt + " · reactivating React, deepening TypeScript, ramping on Adobe Experience Manager.";
     } catch (e) {
       /* leave the static fallback in place */
     }
