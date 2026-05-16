@@ -136,7 +136,7 @@ a:hover {
 
 .masthead, main, .colophon { width: var(--container); margin-inline: auto; }
 
-main { padding-block-start: clamp(2rem, 6vw, 5rem); }
+main { padding-block-start: clamp(1.25rem, 4vw, 3rem); }
 
 .section {
   padding-block: clamp(4rem, 10vw, 8rem);
@@ -224,7 +224,7 @@ main { padding-block-start: clamp(2rem, 6vw, 5rem); }
 
 .hero {
   position: relative;
-  padding-block: clamp(2.5rem, 6vw, 5rem) clamp(4rem, 10vw, 8rem);
+  padding-block: clamp(1.5rem, 4vw, 3rem) clamp(4rem, 10vw, 8rem);
   display: grid;
   gap: clamp(1.25rem, 2.5vw, 2rem);
 }
