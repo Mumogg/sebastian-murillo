@@ -15,7 +15,7 @@
       var fmt = new Intl.DateTimeFormat("en-US", {
         month: "long", day: "numeric", year: "numeric"
       }).format(today).toLowerCase();
-      nowEl.textContent = fmt + " · reactivating React, deepening TypeScript, ramping on Adobe Experience Manager.";
+      nowEl.textContent = fmt + " · sharpening TypeScript on PlaylistLab's Cloud Functions, refreshing React, ramping on Adobe Experience Manager.";
     } catch (e) {
       /* leave the static fallback in place */
     }
@@ -107,7 +107,7 @@
   if (window.console && console.log) {
     var head = "color:#c2410c;font:600 14px/1.2 ui-monospace,monospace;";
     var body = "color:#5c554f;font:400 12px/1.4 ui-monospace,monospace;";
-    console.log("%cSebastián Murillo · Front End Developer", head);
+    console.log("%cSebastián Murillo · Computer Systems Engineer", head);
     console.log(
       "%c—\nCosta Rica · sebastianmurillomoracr@gmail.com\n" +
       "If you read source, we should probably talk.\n—",

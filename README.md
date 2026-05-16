@@ -1,6 +1,6 @@
 # Sebastián Murillo — Portfolio
 
-Personal portfolio for **Sebastián Murillo Mora**, Front End Developer based in Costa Rica.
+Personal portfolio for **Sebastián Murillo Mora**, Computer Systems Engineer based in Costa Rica — security mindset, ships full-stack.
 
 **Live:** <https://mumogg.github.io/sebastian-murillo/>
 
@@ -10,10 +10,10 @@ Hand-written static site — no framework, no build step, no dependencies. Three
 
 ## What's on the site
 
-- **Hero + About** — Computer Systems Engineer building for the browser; current focus is React + TypeScript + Adobe Experience Manager.
-- **Selected work** — `PlaylistLab`, a full-stack Spotify/YouTube playlist generator with AI-prompt support. Deployed, publicly accessible, actively developing.
-- **Skills** — Front-End / Back-End & Data / Systems & Security.
+- **Hero + About** — Computer Systems Engineer with a security mindset; ships full-stack, currently iterating on PlaylistLab's backend, refreshing React, ramping on Adobe Experience Manager.
 - **Systems & Security** — Linux Hardening Labs (GitHub) and the networking foundation behind it (Cisco Networking Academy, CCNA modules 1–2, IoT Fundamentals).
+- **Selected work** — `PlaylistLab`: an architecture exercise in the shape of a music app. Three layered OAuth flows, AES-256-CBC token encryption, deny-all Firestore mediated by Cloud Functions. Deployed, publicly accessible, actively developing.
+- **Skills** — Systems & Security / Back-End & Data / Front-End.
 - **Contact** — email, phone, LinkedIn, GitHub.
 
 ---
