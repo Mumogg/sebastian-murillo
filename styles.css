@@ -139,7 +139,7 @@ a:hover {
 main { padding-block-start: clamp(0.5rem, 2vw, 1.5rem); }
 
 .section {
-  padding-block: clamp(4rem, 10vw, 8rem);
+  padding-block: clamp(2.5rem, 6vw, 5rem);
   border-top: 1px solid var(--rule);
 }
 
@@ -376,7 +376,6 @@ main { padding-block-start: clamp(0.5rem, 2vw, 1.5rem); }
   aspect-ratio: 4 / 3;
   isolation: isolate;
   transition: transform .6s var(--ease-out);
-  align-self: start;          /* don't stretch vertically with the body */
   min-width: 0;               /* allow the column to respect its 1.15fr track */
 }
 .feature:hover .feature__media { transform: translateY(-4px); }
